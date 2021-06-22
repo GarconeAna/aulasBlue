@@ -15,6 +15,7 @@ soma = sum(l)
 crescente = sorted(l) 
 l.reverse()
 
+
 print(f'O tamanho da lista é {tamanho}')
 print(f'O maior valor da lista é {maior}')
 print(f'O maior valor da lista é {menor}')

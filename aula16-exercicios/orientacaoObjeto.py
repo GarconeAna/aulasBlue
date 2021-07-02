@@ -54,7 +54,23 @@ dadoPessoa.dados()
 #Saldo, e os métodos Sacar e Depositar. Crie um objeto da classe
 #Conta e teste os atributos e métodos implementados.
 
+class Conta:
+    def __init__(self, titular, saldo) : # isso precisa ser passado obrigatoriamente quando estou criando oobjeto
+        self.titular = titular # caracteristicas do meu objeto
+        self.saldo = saldo # isso que estou fazendo aqui
 
+    def sacar(self) :
+        valorSacar = int(input('Valor para sacar: '))
+        self.saldo -= valorSacar
+        print(f'Valor do seu saldo final é: {self.saldo}')
 
+    def depositar(self) :
+        valorDepositar = int(input('Valor para depositar: '))
+        self.saldo += valorDepositar
+        print(f'Valor do seu saldo final é: {self.saldo}')
+        
 
-
+cliente1 = Conta('Ana', 10000)
+print(cliente1.titular)
+cliente1.sacar()
+cliente1.depositar()

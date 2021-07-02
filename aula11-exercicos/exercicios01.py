@@ -58,3 +58,30 @@
 #                     print('Quantidade solicitada não disponível.')
 
 ############################################ ainda não consegui resolver certinho
+
+# correção do exercicio 03 pelo professor
+
+itensComprados = []
+totalQuantidadeGeral = []
+
+estoque = {'coca':15, 'chocolate':5, 'batata':11, 'papel':3, 'presunto':26}
+
+continuar = input('Bem vindo ao Supermercado T3C5. Deseja ir as commpras? ')
+while continuar not in ['s','n'] :
+    continuar = input('Resposta inválida. Deseja ir nas compras (s/n) ').lower()
+
+while continuar == 's':
+    print()
+    print('Nossos produtos:')
+
+    for i in estoque:
+        if estoque[i] > 0:
+            print(i)
+    
+    print()
+
+    produto = input
+
+    continuar = input('Deseja continuar as compras? (s/n) ').lower()
+    while continuar not in ['s','n'] :
+        continuar = input('Resposta inválida. Deseja ir nas compras (s/n) ').lower()
